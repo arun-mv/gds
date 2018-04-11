@@ -60,12 +60,12 @@ class User extends ActiveRecord implements IdentityInterface
 	        'updatedAtAttribute' => 'update_time',
 	        'value' => new Expression('NOW()'),
             	],
-           /* 'softDeleteBehavior' => [
+            'softDeleteBehavior' => [
                 'class' => SoftDeleteBehavior::className(),
                 'softDeleteAttributeValues' => [
-                    'isDeleted' => true
+                    'is_deleted' => true
                 ],
-            ],*/
+            ],
         ];
     }
     

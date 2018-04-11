@@ -4,6 +4,7 @@ namespace app\models;
 
 use Yii;
 
+
 /**
  * This is the model class for table "admin".
  *
@@ -21,6 +22,7 @@ class Admin extends \yii\db\ActiveRecord
     {
         return 'admin';
     }
+    
 
     /**
      * @inheritdoc

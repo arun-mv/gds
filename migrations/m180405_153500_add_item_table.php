@@ -17,7 +17,7 @@ class m180405_153500_add_item_table extends Migration
             'name' => $this->string(50)->notNull(),
             'code' => $this->string(10)->notNull(),
             'hsn_code' => $this->string(10),
-            'type' => $this->integer(1)->notNull(),
+            'type' => $this->integer(1),
             'rate' => $this->integer(5)->notNull(),
             'taxable_amount' => $this->decimal(7,2)->notNull(),
             'sgst' => $this->integer(2)->notNull(),
@@ -28,7 +28,7 @@ class m180405_153500_add_item_table extends Migration
             'created_by' => $this->integer()->notNull(),
             'updated_by' => $this->integer(),
             'created_at' => $this->datetime()->notNull(),
-  	    'updated_at' => $this->datetime(),
+  	    	'updated_at' => $this->datetime(),
         ]);	
     }
 
